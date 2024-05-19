@@ -176,3 +176,46 @@
 [16:08:27] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
 [16:08:27] [Server thread/INFO]: Done (18.070s)! For help, type "help" or "?"
 [16:08:27] [Server thread/INFO]: Timings Reset
+[19:22:06] [Server console handler/WARN]: Exception in thread "Server console handler" 
+[19:22:06] [Server console handler/WARN]: java.io.IOError: java.io.IOException: Input/output error
+
+[19:22:06] [Server console handler/WARN]: 	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:170)
+
+[19:22:06] [Server console handler/WARN]: 	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:110)
+
+[19:22:06] [Server console handler/WARN]: 	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:61)
+
+[19:22:06] [Server console handler/WARN]: 	at org.jline.reader.impl.LineReaderImpl.doReadBinding(LineReaderImpl.java:923)
+
+[19:22:06] [Server console handler/WARN]: 	at org.jline.reader.impl.LineReaderImpl.readBinding(LineReaderImpl.java:956)
+
+[19:22:06] [Server console handler/WARN]: 	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:651)
+
+[19:22:06] [Server console handler/WARN]: 	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:468)
+
+[19:22:06] [Server console handler/WARN]: 	at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:158)
+
+[19:22:06] [Server console handler/WARN]: 	at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:141)
+
+[19:22:06] [Server console handler/WARN]: 	at net.minecraft.server.v1_8_R3.DedicatedServer$2.run(DedicatedServer.java:75)
+
+[19:22:06] [Server console handler/WARN]: Caused by: java.io.IOException: Input/output error
+
+[19:22:06] [Server console handler/WARN]: 	at java.base/java.io.FileInputStream.read0(Native Method)
+
+[19:22:06] [Server console handler/WARN]: 	at java.base/java.io.FileInputStream.read(FileInputStream.java:231)
+
+[19:22:06] [Server console handler/WARN]: 	at org.jline.terminal.impl.AbstractPty$PtyInputStream.read(AbstractPty.java:73)
+
+[19:22:06] [Server console handler/WARN]: 	at org.jline.utils.NonBlockingInputStream.read(NonBlockingInputStream.java:62)
+
+[19:22:06] [Server console handler/WARN]: 	at org.jline.utils.NonBlocking$NonBlockingInputStreamReader.read(NonBlocking.java:168)
+
+[19:22:06] [Server console handler/WARN]: 	at org.jline.utils.NonBlockingReader.read(NonBlockingReader.java:57)
+
+[19:22:06] [Server console handler/WARN]: 	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:160)
+
+[19:22:06] [Server console handler/WARN]: 	... 9 more
+
+[19:22:06] [Thread-1/INFO]: Stopping server
+[19:22:06] [Thread-1/INFO]: Saving players

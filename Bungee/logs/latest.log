@@ -31,3 +31,25 @@
 [16:10:07] [main/INFO]: Enabled plugin EaglercraftXBungee version 1.0.7 by lax1dude
 [16:10:07] [Netty Boss IO Thread #0/INFO]: Listening on /127.0.0.1:25577
 [16:12:19] [Netty Worker IO Thread #1/WARN] [EaglercraftXBungee]: Server icon is not a file: /workspaces/Public-Server-1-1.8/Bungee/server-icon.png
+[19:22:02] [main/ERROR]: Exception in thread "main" java.io.IOError: java.io.IOException: Input/output error
+[19:22:02] [main/ERROR]: 	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:170)
+[19:22:02] [main/ERROR]: 	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:110)
+[19:22:02] [main/ERROR]: 	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:61)
+[19:22:02] [main/ERROR]: 	at org.jline.reader.impl.LineReaderImpl.doReadBinding(LineReaderImpl.java:923)
+[19:22:02] [main/ERROR]: 	at org.jline.reader.impl.LineReaderImpl.readBinding(LineReaderImpl.java:956)
+[19:22:02] [main/ERROR]: 	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:651)
+[19:22:02] [main/ERROR]: 	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:468)
+[19:22:02] [main/ERROR]: 	at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:158)
+[19:22:02] [main/ERROR]: 	at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:141)
+[19:22:02] [main/ERROR]: 	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:72)
+[19:22:02] [main/ERROR]: 	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+[19:22:02] [main/ERROR]: Caused by: java.io.IOException: Input/output error
+[19:22:02] [main/ERROR]: 	at java.base/java.io.FileInputStream.read0(Native Method)
+[19:22:02] [main/ERROR]: 	at java.base/java.io.FileInputStream.read(FileInputStream.java:231)
+[19:22:02] [main/ERROR]: 	at org.jline.terminal.impl.AbstractPty$PtyInputStream.read(AbstractPty.java:73)
+[19:22:02] [main/ERROR]: 	at org.jline.utils.NonBlockingInputStream.read(NonBlockingInputStream.java:62)
+[19:22:02] [main/ERROR]: 	at org.jline.utils.NonBlocking$NonBlockingInputStreamReader.read(NonBlocking.java:168)
+[19:22:02] [main/ERROR]: 	at org.jline.utils.NonBlockingReader.read(NonBlockingReader.java:57)
+[19:22:02] [main/ERROR]: 	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:160)
+[19:22:02] [main/ERROR]: 	... 10 more
+[19:22:02] [Thread-3/INFO]: Closing listener [id: 0xa5e7873e, L:/127.0.0.1:25577]
